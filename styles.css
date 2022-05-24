@@ -1,0 +1,44 @@
+:root {
+  --color-blue: #3888c1;
+  --font-family: "Nunito", sans-serif;
+  --font-xxl: 40px;
+  --font-bold: 700;
+  --space-xl: 32px;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0 100px;
+  font-family: var(--font-family);
+}
+h1 {
+  font-weight: var(--font-bold);
+  padding: var(--space-xl) 0;
+  font-size: var(--font-xxl);
+  text-align: center;
+}
+.container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-250px);
+}
+.image {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+.image img {
+  display: block;
+}
+.image-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-blue);
+  opacity: 0.7;
+  border-radius: 50%;
+}
